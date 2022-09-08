@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../pages/rewards.dart';
+
 class RewardsFour extends StatelessWidget {
   const RewardsFour({Key? key}) : super(key: key);
 
@@ -7,7 +9,12 @@ class RewardsFour extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const RewardsPage()),
+          );
+        },
         child: Container(
           width: 88,
           height: 90,

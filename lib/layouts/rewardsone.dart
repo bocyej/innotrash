@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
+
+import '../pages/rewards.dart';
 
 class RewardsOne extends StatelessWidget {
   const RewardsOne({Key? key}) : super(key: key);
@@ -9,7 +10,12 @@ class RewardsOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const RewardsPage()),
+          );
+        },
         child: Container(
           width: 277,
           height: 125,
@@ -45,7 +51,13 @@ class RewardsOne extends StatelessWidget {
                   ),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const RewardsPage()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),
