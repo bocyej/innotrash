@@ -8,7 +8,6 @@ class MapPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true, // transparent appbar
       appBar: const MapAppbar(),
       body: Container(
         decoration: const BoxDecoration(
