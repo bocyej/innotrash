@@ -9,14 +9,7 @@ class VouchersOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: InkWell(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const RewardsPage()),
-          );
-        },
-        child: Container(
+      child: Container(
           width: 125,
           height: 150,
           decoration: const BoxDecoration(
@@ -74,7 +67,6 @@ class VouchersOne extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }
