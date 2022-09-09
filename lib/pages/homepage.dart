@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../pages/rewards.dart';
+import '../pages/structure.dart';
+import '../pages/map.dart';
+
 import '../layouts/homeappbar.dart';
 
 import '../layouts/rewardsone.dart';
@@ -39,7 +43,13 @@ class Homepage extends StatelessWidget {
                 ),
                 const Padding(padding: EdgeInsets.only(right: 155)),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const RewardsPage()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.transparent,
                     elevation: 0.0,
@@ -83,7 +93,13 @@ class Homepage extends StatelessWidget {
                 ),
                 const Padding(padding: EdgeInsets.only(right: 23)),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MapPage()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.transparent,
                     elevation: 0.0,
