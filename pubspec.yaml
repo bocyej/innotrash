@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^3.0.1
+  persistent_bottom_nav_bar: ^4.0.2
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +71,8 @@ flutter:
     - assets/photos/rewardstwo_image.png
     - assets/photos/rewardsthree_image.png
     - assets/photos/rewardsfour_image.png
+    - assets/photos/rewardsfive_image.png
+    - assets/photos/rewardssix_image.png
     - assets/photos/intro_1.png
     - assets/photos/intro_2.png
     - assets/photos/intro_3.png
