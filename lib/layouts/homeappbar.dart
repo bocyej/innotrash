@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../pages/profile.dart';
+
 class HomeAppbar extends StatelessWidget with PreferredSizeWidget {
   const HomeAppbar({Key? key}) : super(key: key);
 
@@ -37,7 +39,12 @@ class HomeAppbar extends StatelessWidget with PreferredSizeWidget {
             shape: const CircleBorder(),
             clipBehavior: Clip.hardEdge,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProfilePage()),
+                );
+              },
               child: Ink.image(
                 image: const AssetImage('assets/photos/profile_pic.png'),
                 height: 30,
