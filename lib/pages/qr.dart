@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../pages/homepage.dart';
+
 class QRPage extends StatelessWidget {
   const QRPage({Key? key}) : super(key: key);
 
@@ -21,7 +23,12 @@ class QRPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Homepage()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     shape: const CircleBorder(),
                     padding: const EdgeInsets.all(18),
@@ -32,7 +39,7 @@ class QRPage extends StatelessWidget {
                 const Padding(padding: EdgeInsets.only(right: 15)),
               ],
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 35)),
+            const Padding(padding: EdgeInsets.only(bottom: 25)),
             const Center(
               child: Icon(
                 Icons.fullscreen_outlined,
@@ -50,7 +57,7 @@ class QRPage extends StatelessWidget {
         ),
       ),
       floatingActionButton: Align(
-        alignment: const Alignment(0.0, 0.7),
+        alignment: const Alignment(0.0, 0.8),
         child: FloatingActionButton(
           onPressed: () {},
           tooltip: 'Scan QR',
