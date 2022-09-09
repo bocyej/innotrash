@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../pages/homepage.dart';
+
 class RewardsAppbar extends StatelessWidget with PreferredSizeWidget {
   const RewardsAppbar({Key? key}) : super(key: key);
 
@@ -13,7 +15,12 @@ class RewardsAppbar extends StatelessWidget with PreferredSizeWidget {
         builder: (BuildContext context) {
           return IconButton(
             icon: const Icon(Icons.arrow_back_ios),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Homepage()),
+              );
+            },
             padding: const EdgeInsets.only(left: 10),
           );
         },
