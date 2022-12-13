@@ -8,7 +8,7 @@ class ProfileCard extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const Padding(padding: EdgeInsets.only(top: 40)),
+        const Padding(padding: EdgeInsets.only(top: 115)),
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
@@ -19,13 +19,13 @@ class ProfileCard extends StatelessWidget {
           ),
           child: const Image(
             image: AssetImage('assets/photos/profile_pic.png'),
-            height: 250,
-            width: 250,
+            height: 300,
+            width: 300,
           ),
         ),
-        const Padding(padding: EdgeInsets.only(bottom: 20)),
+        const Padding(padding: EdgeInsets.only(bottom: 50)),
         Container(
-          height: 295,
+          height: 325,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(40.0),
@@ -44,7 +44,7 @@ class ProfileCard extends StatelessWidget {
                     'NameNameName',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 25,
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -59,14 +59,14 @@ class ProfileCard extends StatelessWidget {
                     '@usernameusername',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.w300,
                     ),
                     textAlign: TextAlign.left,
                   ),
                 ],
               ),
-              const Padding(padding: EdgeInsets.only(bottom: 20)),
+              const Padding(padding: EdgeInsets.only(bottom: 25)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: const [
@@ -75,7 +75,7 @@ class ProfileCard extends StatelessWidget {
                     'Birthday :',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.left,
@@ -84,7 +84,7 @@ class ProfileCard extends StatelessWidget {
                     ' March 28, 1987',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.normal,
                     ),
                     textAlign: TextAlign.left,
@@ -100,7 +100,7 @@ class ProfileCard extends StatelessWidget {
                     'Phone Number :',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.left,
@@ -109,7 +109,7 @@ class ProfileCard extends StatelessWidget {
                     ' 09312795281',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.normal,
                     ),
                     textAlign: TextAlign.left,
@@ -125,7 +125,7 @@ class ProfileCard extends StatelessWidget {
                     'Email :',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.left,
@@ -134,17 +134,17 @@ class ProfileCard extends StatelessWidget {
                     ' skldfjav@email.com',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.normal,
                     ),
                     textAlign: TextAlign.left,
                   ),
                 ],
               ),
-              const Padding(padding: EdgeInsets.only(bottom: 20)),
+              const Padding(padding: EdgeInsets.only(bottom: 25)),
               SizedBox(
-                width: 250,
-                height: 35,
+                width: 350,
+                height: 50,
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
@@ -158,7 +158,7 @@ class ProfileCard extends StatelessWidget {
                     'Edit Profile',
                     style: TextStyle(
                       color: Colors.blue,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.normal,
                     ),
                   ),

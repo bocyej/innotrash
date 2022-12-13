@@ -16,28 +16,28 @@ class RewardsFour extends StatelessWidget {
           );
         },
         child: Container(
-          width: 88,
-          height: 90,
+          width: 110,
+          height: 105,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10.0)),
             color: Colors.white,
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
                 children: const [
-                  Padding(padding: EdgeInsets.only(left: 88, top: 10)),
+                  Padding(padding: EdgeInsets.only(top: 10)),
                   Image(
                     image: AssetImage("assets/photos/rewardsfour_image.png"),
-                    height: 55,
+                    height: 65,
                   ),
                   Padding(padding: EdgeInsets.only(bottom: 5)),
                   Text(
                     'USE YOUR VOUCHERS',
                     style: TextStyle(
                       color: Colors.blue,
-                      fontSize: 7,
+                      fontSize: 9,
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.left,

@@ -16,28 +16,28 @@ class RewardsTwo extends StatelessWidget {
           );
         },
         child: Container(
-          width: 88,
-          height: 90,
+          width: 110,
+          height: 105,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10.0)),
             color: Colors.white,
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
                 children: const [
-                  Padding(padding: EdgeInsets.only(left: 88, top: 15)),
+                  Padding(padding: EdgeInsets.only(top: 15)),
                   Image(
                     image: AssetImage("assets/photos/rewardstwo_image.png"),
-                    height: 50,
+                    height: 55,
                   ),
-                  Padding(padding: EdgeInsets.only(bottom: 5)),
+                  Padding(padding: EdgeInsets.only(bottom: 10)),
                   Text(
                     'VOUCHERS TO CASH',
                     style: TextStyle(
                       color: Colors.blue,
-                      fontSize: 7,
+                      fontSize: 9,
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.left,

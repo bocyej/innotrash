@@ -19,29 +19,29 @@ class IntroOne extends StatelessWidget {
           ),
         ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Padding(padding: EdgeInsets.only(top: 160)),
+            const Padding(padding: EdgeInsets.only(top: 75)),
             const Image(
               image: AssetImage("assets/photos/intro_1.png"),
-              height: 225,
+              height: 300,
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 25)),
+            const Padding(padding: EdgeInsets.only(bottom: 30)),
             const Text(
               'PARTICIPATE',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 30,
+                fontSize: 35,
                 fontWeight: FontWeight.normal,
                 fontFamily: 'Sans Serif',
               ),
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 5)),
+            const Padding(padding: EdgeInsets.only(bottom: 10)),
             const Text(
               'Help the environment by recycling your trash',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 10,
+                fontSize: 15,
                 fontWeight: FontWeight.normal,
               ),
             ),
@@ -49,51 +49,45 @@ class IntroOne extends StatelessWidget {
               'in an iNNOTrash near you!',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 10,
+                fontSize: 15,
                 fontWeight: FontWeight.normal,
               ),
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 25)),
+            const Padding(padding: EdgeInsets.only(bottom: 75)),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const IntroThree()),
+                      MaterialPageRoute(
+                          builder: (context) => const IntroThree()),
                     );
                   },
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFF2F7CFF),
-                    elevation: 0.0,
-                  ),
                   child: const Text(
                     'Skip',
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
+                      color: Colors.white70,
+                      fontSize: 17,
                       fontWeight: FontWeight.normal,
                     ),
                   ),
                 ),
+                const Padding(padding: EdgeInsets.only(right: 225)),
                 // insert pagemarker
-                ElevatedButton(
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const IntroTwo()),
                     );
                   },
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFF2F7CFF),
-                    elevation: 0.0,
-                  ),
                   child: const Text(
                     'Next',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 17,
                       fontWeight: FontWeight.normal,
                     ),
                   ),
