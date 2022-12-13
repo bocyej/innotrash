@@ -19,8 +19,8 @@ class HomeMap extends StatelessWidget {
           },
           child: Ink.image(
             image: const AssetImage('assets/photos/map_home.png'),
-            height: 180,
-            width: 275,
+            height: 240,
+            width: 350,
           ),
         ),
       ),
