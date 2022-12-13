@@ -13,11 +13,14 @@ class HomeAppbar extends StatelessWidget with PreferredSizeWidget {
     return AppBar(
       leading: Builder(
         builder: (BuildContext context) {
-          return IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {},
-            tooltip: 'Search',
-            padding: const EdgeInsets.all(15),
+          return Row(
+            children: [
+              const Padding(padding: EdgeInsets.only(left: 30)),
+              InkWell(
+                child: const Icon(Icons.search),
+                onTap: () {},
+              )
+            ],
           );
         },
       ),
@@ -25,12 +28,11 @@ class HomeAppbar extends StatelessWidget with PreferredSizeWidget {
       foregroundColor: Colors.white,
       elevation: 0.0,
       actions: <Widget>[
-        IconButton(
-          icon: const Icon(Icons.notifications_none_outlined),
-          tooltip: 'Notifications',
-          onPressed: () {},
-          padding: const EdgeInsets.only(right: 20),
+        InkWell(
+          child: const Icon(Icons.notifications_none_outlined),
+          onTap: () {},
         ),
+        const Padding(padding: EdgeInsets.only(right: 25)),
         Container(
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
@@ -53,7 +55,7 @@ class HomeAppbar extends StatelessWidget with PreferredSizeWidget {
             ),
           ),
         ),
-        const Padding(padding: EdgeInsets.only(right: 15)),
+        const Padding(padding: EdgeInsets.only(right: 30)),
       ],
     );
   }
