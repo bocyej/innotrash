@@ -13,9 +13,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'iNNOTRASH',
-      // theme: ThemeData(
-      //   primarySwatch: Colors.blue,
-      // ),
       home: IntroOne(),
     );
   }
