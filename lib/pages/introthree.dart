@@ -13,50 +13,51 @@ class IntroThree extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/photos/bg_1.png"),
+            image: AssetImage("assets/photos/bg_3.png"),
             fit: BoxFit.cover,
           ),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Padding(padding: EdgeInsets.only(top: 165)),
+            const Padding(padding: EdgeInsets.only(top: 75)),
             const Image(
               image: AssetImage("assets/photos/intro_3.png"),
-              height: 200,
+              height: 300,
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 25)),
+            const Padding(padding: EdgeInsets.only(bottom: 30)),
             const Text(
-              'PARTICIPATE',
+              'BE UPDATED',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: 35,
                 fontWeight: FontWeight.normal,
                 fontFamily: 'Sans Serif',
               ),
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 5)),
+            const Padding(padding: EdgeInsets.only(bottom: 10)),
             const Text(
-              'Help the environment by recycling your trash',
+              'Stay notified with all the recycling events and',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 10,
+                fontSize: 15,
                 fontWeight: FontWeight.normal,
               ),
             ),
             const Text(
-              'in an iNNOTrash near you!',
+              'iNNOTrash!',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 10,
+                fontSize: 15,
                 fontWeight: FontWeight.normal,
               ),
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 25)),
+            const Padding(padding: EdgeInsets.only(bottom: 125)),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: 250,
+                  width: 300,
                   height: 50,
                   child: ElevatedButton(
                     onPressed: () {
@@ -77,8 +78,8 @@ class IntroThree extends StatelessWidget {
                       'Continue',
                       style: TextStyle(
                         color: Colors.blue,
-                        fontSize: 15,
-                        fontWeight: FontWeight.normal,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),
