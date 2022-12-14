@@ -37,19 +37,19 @@ class RedeemFour extends StatelessWidget {
                   ),
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 3)),
-                Text(
+                const Text(
                   'Lorem ipsum dolor sit amet,',
                   style: TextStyle(
-                    color: Colors.grey.shade700,
+                    color: Colors.grey,
                     fontSize: 12,
                     fontWeight: FontWeight.normal,
                   ),
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 3)),
-                Text(
+                const Text(
                   'consectetur adipiscing',
                   style: TextStyle(
-                    color: Colors.grey.shade700,
+                    color: Colors.grey,
                     fontSize: 12,
                     fontWeight: FontWeight.normal,
                   ),
