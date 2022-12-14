@@ -10,56 +10,57 @@ class RedeemFour extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 125,
-        height: 150,
+        width: 175,
+        height: 225,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(8.0)),
           color: Colors.white,
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
               children: [
-                const Padding(padding: EdgeInsets.only(left: 125, top: 10)),
+                const Padding(padding: EdgeInsets.only(top: 13)),
                 const Image(
                   image: AssetImage("assets/photos/rewardssix_image.png"),
-                  height: 65,
+                  height: 105,
                 ),
-                const Padding(padding: EdgeInsets.only(bottom: 5)),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Text(
                   '250PHP IN-GAME TOKENS',
                   style: TextStyle(
                     color: Colors.blue,
-                    fontSize: 15,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Sans Serif',
                   ),
                 ),
-                const Padding(padding: EdgeInsets.only(bottom: 1)),
-                const Text(
+                const Padding(padding: EdgeInsets.only(bottom: 3)),
+                Text(
                   'Lorem ipsum dolor sit amet,',
                   style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 9,
+                    color: Colors.grey.shade700,
+                    fontSize: 12,
                     fontWeight: FontWeight.normal,
                   ),
                 ),
-                const Text(
+                const Padding(padding: EdgeInsets.only(bottom: 3)),
+                Text(
                   'consectetur adipiscing',
                   style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 9,
+                    color: Colors.grey.shade700,
+                    fontSize: 12,
                     fontWeight: FontWeight.normal,
                   ),
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 5)),
                 Row(
                   children: [
-                    Padding(padding: EdgeInsets.only(left: 65)),
+                    const Padding(padding: EdgeInsets.only(left: 75)),
                     SizedBox(
-                      height: 15,
-                      width: 45,
+                      height: 25,
+                      width: 75,
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -75,7 +76,7 @@ class RedeemFour extends StatelessWidget {
                           'Redeem',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 8,
+                            fontSize: 12,
                             fontWeight: FontWeight.normal,
                           ),
                         ),
