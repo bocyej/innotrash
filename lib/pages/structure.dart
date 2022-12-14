@@ -47,11 +47,11 @@ class _StructurePageState extends State<StructurePage> {
       PersistentBottomNavBarItem(
         icon: const Icon(
           Icons.home,
-          size: 35,
+          size: 30,
         ),
         inactiveIcon: const Icon(
           Icons.home_outlined,
-          size: 35,
+          size: 30,
         ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
@@ -59,17 +59,19 @@ class _StructurePageState extends State<StructurePage> {
       PersistentBottomNavBarItem(
         icon: const Icon(
           Icons.qr_code,
-          size: 35,
+          size: 30,
         ),
         inactiveIcon: const Icon(
           Icons.qr_code_outlined,
-          size: 35,
+          size: 30,
         ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
       ),
       PersistentBottomNavBarItem(
         icon: Container(
+          height: 70,
+          width: 70,
           decoration: const BoxDecoration(
             color: Color(0xFF2F7CFF),
             shape: BoxShape.circle,
@@ -78,11 +80,13 @@ class _StructurePageState extends State<StructurePage> {
             padding: EdgeInsets.all(7.0),
             child: Icon(
               Icons.map,
-              size: 35,
+              size: 30,
             ),
           ),
         ),
         inactiveIcon: Container(
+          height: 70,
+          width: 70,
           decoration: const BoxDecoration(
             color: Color(0xFF2F7CFF),
             shape: BoxShape.circle,
@@ -91,7 +95,7 @@ class _StructurePageState extends State<StructurePage> {
             padding: EdgeInsets.all(7.0),
             child: Icon(
               Icons.map_outlined,
-              size: 35,
+              size: 30,
             ),
           ),
         ),
@@ -101,11 +105,11 @@ class _StructurePageState extends State<StructurePage> {
       PersistentBottomNavBarItem(
         icon: const Icon(
           Icons.radio_button_on,
-          size: 35,
+          size: 30,
         ),
         inactiveIcon: const Icon(
           Icons.radio_button_off,
-          size: 35,
+          size: 30,
         ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
@@ -113,11 +117,11 @@ class _StructurePageState extends State<StructurePage> {
       PersistentBottomNavBarItem(
         icon: const Icon(
           Icons.person_sharp,
-          size: 35,
+          size: 30,
         ),
         inactiveIcon: const Icon(
           Icons.person_outline_sharp,
-          size: 35,
+          size: 30,
         ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
