@@ -17,24 +17,24 @@ class VouchersTwo extends StatelessWidget {
           );
         },
         child: Container(
-          width: 125,
-          height: 150,
+          width: 175,
+          height: 225,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
             color: Colors.white,
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
-                children: const [
-                  Padding(padding: EdgeInsets.only(left: 125, top: 10)),
-                  Image(
+                children: [
+                  const Padding(padding: EdgeInsets.only(top: 13)),
+                  const Image(
                     image: AssetImage("assets/photos/rewardsthree_image.png"),
-                    height: 65,
+                    height: 105,
                   ),
-                  Padding(padding: EdgeInsets.only(bottom: 5)),
-                  Text(
+                  const Padding(padding: EdgeInsets.only(bottom: 10)),
+                  const Text(
                     '10% OFF CLOTHING',
                     style: TextStyle(
                       color: Colors.blue,
@@ -43,32 +43,38 @@ class VouchersTwo extends StatelessWidget {
                       fontFamily: 'Sans Serif',
                     ),
                   ),
-                  Padding(padding: EdgeInsets.only(bottom: 1)),
-                  Text(
+                  const Padding(padding: EdgeInsets.only(bottom: 3)),
+                  const Text(
                     'Lorem ipsum dolor sit amet,',
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 9,
+                      color: Colors.grey,
+                      fontSize: 12,
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  Text(
+                  const Padding(padding: EdgeInsets.only(bottom: 3)),
+                  const Text(
                     'consectetur adipiscing',
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 9,
+                      color: Colors.grey,
+                      fontSize: 12,
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  Padding(padding: EdgeInsets.only(bottom: 10)),
-                  Text(
-                    'date110525',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 7,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
+                  const Padding(padding: EdgeInsets.only(bottom: 10)),
+                  Row(
+                    children: [
+                      const Padding(padding: EdgeInsets.only(left: 85)),
+                      Text(
+                        'date110525',
+                        style: TextStyle(
+                          color: Colors.grey.shade700,
+                          fontSize: 12,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ],

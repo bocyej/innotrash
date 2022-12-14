@@ -10,63 +10,69 @@ class VouchersOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-          width: 125,
-          height: 150,
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(8.0)),
-            color: Colors.white,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Column(
-                children: const [
-                  Padding(padding: EdgeInsets.only(left: 125, top: 10)),
-                  Image(
-                    image: AssetImage("assets/photos/rewardsfour_image.png"),
-                    height: 65,
-                  ),
-                  Padding(padding: EdgeInsets.only(bottom: 5)),
-                  Text(
-                    '50% OFF GROCERIES',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Sans Serif',
-                    ),
-                  ),
-                  Padding(padding: EdgeInsets.only(bottom: 1)),
-                  Text(
-                    'Lorem ipsum dolor sit amet,',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 9,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                  Text(
-                    'consectetur adipiscing',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 9,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                  Padding(padding: EdgeInsets.only(bottom: 10)),
-                  Text(
-                    'date110525',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 7,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
+        width: 175,
+        height: 225,
+        decoration: const BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+          color: Colors.white,
         ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              children: [
+                const Padding(padding: EdgeInsets.only(top: 13)),
+                const Image(
+                  image: AssetImage("assets/photos/rewardsfour_image.png"),
+                  height: 105,
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const Text(
+                  '50% OFF GROCERIES',
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Sans Serif',
+                  ),
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 3)),
+                const Text(
+                  'Lorem ipsum dolor sit amet,',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 12,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 3)),
+                const Text(
+                  'consectetur adipiscing',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 12,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                Row(
+                  children: [
+                    const Padding(padding: EdgeInsets.only(left: 85)),
+                    Text(
+                      'date110525',
+                      style: TextStyle(
+                        color: Colors.grey.shade700,
+                        fontSize: 12,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
