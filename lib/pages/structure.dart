@@ -45,14 +45,26 @@ class _StructurePageState extends State<StructurePage> {
   List<PersistentBottomNavBarItem> _navBarItems() {
     return [
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.home),
-        inactiveIcon: const Icon(Icons.home_outlined),
+        icon: const Icon(
+          Icons.home,
+          size: 35,
+        ),
+        inactiveIcon: const Icon(
+          Icons.home_outlined,
+          size: 35,
+        ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.qr_code),
-        inactiveIcon: const Icon(Icons.qr_code_outlined),
+        icon: const Icon(
+          Icons.qr_code,
+          size: 35,
+        ),
+        inactiveIcon: const Icon(
+          Icons.qr_code_outlined,
+          size: 35,
+        ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
       ),
@@ -66,6 +78,7 @@ class _StructurePageState extends State<StructurePage> {
             padding: EdgeInsets.all(7.0),
             child: Icon(
               Icons.map,
+              size: 35,
             ),
           ),
         ),
@@ -78,6 +91,7 @@ class _StructurePageState extends State<StructurePage> {
             padding: EdgeInsets.all(7.0),
             child: Icon(
               Icons.map_outlined,
+              size: 35,
             ),
           ),
         ),
@@ -85,14 +99,26 @@ class _StructurePageState extends State<StructurePage> {
         inactiveColorPrimary: Colors.grey.shade400,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.radio_button_on),
-        inactiveIcon: const Icon(Icons.radio_button_off),
+        icon: const Icon(
+          Icons.radio_button_on,
+          size: 35,
+        ),
+        inactiveIcon: const Icon(
+          Icons.radio_button_off,
+          size: 35,
+        ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.person_sharp),
-        inactiveIcon: const Icon(Icons.person_outline_sharp),
+        icon: const Icon(
+          Icons.person_sharp,
+          size: 35,
+        ),
+        inactiveIcon: const Icon(
+          Icons.person_outline_sharp,
+          size: 35,
+        ),
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.grey.shade400,
       ),
@@ -103,11 +129,12 @@ class _StructurePageState extends State<StructurePage> {
   Widget build(BuildContext context) {
     return PersistentTabView(
       context,
-      backgroundColor: Color(0xFF2D2F4E),
+      backgroundColor: const Color(0xFF2D2F4E),
       controller: _controller,
       screens: _buildScreens(),
       items: _navBarItems(),
       navBarStyle: NavBarStyle.style12,
+      navBarHeight: 80,
     );
   }
 }
