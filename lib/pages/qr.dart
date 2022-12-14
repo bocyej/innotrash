@@ -15,13 +15,23 @@ class QRPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        // child: null,
         child: Column(
           children: [
-            const Padding(padding: EdgeInsets.only(top: 35)),
+            const Padding(padding: EdgeInsets.only(top: 115)),
             Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                const Padding(padding: EdgeInsets.only(left: 115)),
+                const Text(
+                  'SCAN TO REGISTER',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                    fontWeight: FontWeight.normal,
+                    fontFamily: 'Sans Serif',
+                  ),
+                ),
+                const Padding(padding: EdgeInsets.only(right: 50)),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -36,38 +46,43 @@ class QRPage extends StatelessWidget {
                   ),
                   child: const Icon(Icons.close),
                 ),
-                const Padding(padding: EdgeInsets.only(right: 15)),
               ],
             ),
             const Padding(padding: EdgeInsets.only(bottom: 25)),
             const Center(
               child: Icon(
                 Icons.fullscreen_outlined,
-                size: 300,
+                size: 315,
                 color: Colors.white,
               ),
             ),
+            const Padding(padding: EdgeInsets.only(bottom: 25)),
             const Text(
               'Place the code inside the frame',
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 17,
               ),
             ),
           ],
         ),
       ),
-      floatingActionButton: Align(
-        alignment: const Alignment(0.0, 0.8),
-        child: FloatingActionButton(
-          onPressed: () {},
-          tooltip: 'Scan QR',
-          backgroundColor: const Color(0xFF2F7CFF),
-          child: Icon(
-            Icons.fullscreen_outlined,
-            size: 35,
-            color: Colors.grey.shade200,
+      floatingActionButton: Container(
+        height: 75,
+        width: 75,
+        child: Align(
+          alignment: const Alignment(0.0, -1.9),
+          child: FloatingActionButton(
+            onPressed: () {},
+            tooltip: 'Scan QR',
+            backgroundColor: const Color(0xFF2F7CFF),
+            child: Icon(
+              Icons.fullscreen_outlined,
+              size: 40,
+              color: Colors.grey.shade200,
+            ),
+            // Icons.qr_code_scanner_outlined or Icons.crop_free_sharp
           ),
-          // Icons.qr_code_scanner_outlined or Icons.crop_free_sharp
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
