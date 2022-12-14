@@ -77,7 +77,7 @@ class RewardsPage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 400,
+                    height: 500,
                     decoration: const BoxDecoration(
                       border: Border(
                         top: BorderSide(color: Colors.grey, width: 1.0),
@@ -94,6 +94,7 @@ class RewardsPage extends StatelessWidget {
                                 ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
+                                  //change to spaceEvenly when more vouchers are added
                                   children: const [
                                     Padding(padding: EdgeInsets.only(left: 21)),
                                     VouchersOne(),
