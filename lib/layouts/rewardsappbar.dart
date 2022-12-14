@@ -6,24 +6,22 @@ class RewardsAppbar extends StatelessWidget with PreferredSizeWidget {
   const RewardsAppbar({Key? key}) : super(key: key);
 
   @override
-  Size get preferredSize => const Size.fromHeight(75);
+  Size get preferredSize => const Size.fromHeight(80);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: Builder(
-        builder: (BuildContext context) {
-          return IconButton(
-            icon: const Icon(Icons.arrow_back_ios),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Homepage()),
-              );
-            },
-            padding: const EdgeInsets.only(left: 10),
-          );
-        },
+      leading: Padding(
+        padding: const EdgeInsets.only(top: 25, left: 25),
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Homepage()),
+            );
+          },
+          child: const Icon(Icons.arrow_back),
+        ),
       ),
       backgroundColor: Colors.transparent,
       foregroundColor: Colors.white,
