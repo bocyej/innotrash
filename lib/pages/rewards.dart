@@ -26,30 +26,30 @@ class RewardsPage extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const Padding(padding: EdgeInsets.only(top: 82)),
+            const Padding(padding: EdgeInsets.only(top: 110)),
             const Center(
               child: Text(
                 'Your Balance',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 15,
+                  fontSize: 18,
                   fontWeight: FontWeight.normal,
                 ),
               ),
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 5)),
+            const Padding(padding: EdgeInsets.only(bottom: 10)),
             const Center(
               child: Text(
                 '1559 POINTS',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 50,
+                  fontSize: 53,
                   fontWeight: FontWeight.normal,
                   fontFamily: 'Sans Serif',
                 ),
               ),
             ),
-            const Padding(padding: EdgeInsets.only(bottom: 10)),
+            const Padding(padding: EdgeInsets.only(bottom: 25)),
             DefaultTabController(
               length: 2, // length of tabs
               initialIndex: 0,
@@ -60,16 +60,27 @@ class RewardsPage extends StatelessWidget {
                       labelColor: Colors.white,
                       unselectedLabelColor: Colors.white24,
                       tabs: [
-                        Tab(text: 'Voucher Wallet'),
-                        Tab(text: 'Redeem Vouchers'),
+                        Tab(
+                          child: Text(
+                            'Voucher Wallet',
+                            style: TextStyle(fontSize: 17),
+                          ),
+                        ),
+                        Tab(
+                          child: Text(
+                            'Redeem Vouchers',
+                            style: TextStyle(fontSize: 17),
+                          ),
+                        ),
                       ],
+                      indicatorColor: Colors.white,
                     ),
                   ),
                   Container(
                     height: 400,
                     decoration: const BoxDecoration(
                       border: Border(
-                        top: BorderSide(color: Colors.grey, width: 0.5),
+                        top: BorderSide(color: Colors.grey, width: 1.0),
                       ),
                     ),
                     child: TabBarView(
