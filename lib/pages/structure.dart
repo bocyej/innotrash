@@ -8,7 +8,7 @@ import '../pages/map.dart';
 import '../pages/rewards.dart';
 import '../pages/profile.dart';
 
-import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class Structure extends StatelessWidget {
   const Structure({Key? key}) : super(key: key);
