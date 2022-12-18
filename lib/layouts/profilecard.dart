@@ -8,7 +8,7 @@ class ProfileCard extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const Padding(padding: EdgeInsets.only(top: 115)),
+        const Padding(padding: EdgeInsets.only(top: 90)),
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
