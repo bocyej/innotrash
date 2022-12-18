@@ -139,6 +139,7 @@ class _StructurePageState extends State<StructurePage> {
       items: _navBarItems(),
       navBarStyle: NavBarStyle.style12,
       navBarHeight: 80,
+      hideNavigationBarWhenKeyboardShows: true,
     );
   }
 }
