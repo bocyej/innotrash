@@ -2,22 +2,27 @@
 
 The idea created by iNNOTECH used in Impact Hackathon 2021 - Smart Cities.  Designed and created using flutter.
 
+<br>
+
 ## Photos:
-
-![iNNOTrash (1)](https://user-images.githubusercontent.com/94532348/189286460-8da737ae-6d10-43c0-a042-42a45677c74b.png)
-
-![iNNOTrash (2)](https://user-images.githubusercontent.com/94532348/189286481-902c6b6b-7fa6-4506-93b9-1009f94f20f4.png)
-
-![iNNOTrash (3)](https://user-images.githubusercontent.com/94532348/189286490-e2663c56-5609-4e1b-aad6-2c165ca5f9af.png)
-
-![iNNOTrash (4)](https://user-images.githubusercontent.com/94532348/189286504-3a5d03ad-4576-4798-8fc2-34f78f9104f0.png)
-
-![iNNOTrash (5)](https://user-images.githubusercontent.com/94532348/189286521-75f4ff34-b063-490e-851a-ceb6075f006e.png)
-
-![iNNOTrash (6)](https://user-images.githubusercontent.com/94532348/189286535-d055cd12-1d84-4fb8-b6d0-6dd3bb7f1a52.png)
-
-![iNNOTrash (7)](https://user-images.githubusercontent.com/94532348/189286558-c492fd17-c591-44db-b437-bc22b27cddef.png)
-
-![iNNOTrash (8)](https://user-images.githubusercontent.com/94532348/189286582-a6ff791c-fb1f-40cd-84ba-de9f5d1fedc7.png)
-
-![iNNOTrash (9)](https://user-images.githubusercontent.com/94532348/189286594-c5c62446-5bc3-4717-91b3-40abb06fda0d.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/94532348/208289051-a3349fb5-cad2-4c21-98d1-f3a58c5b4e55.png" width="300"/>
+<img src="https://user-images.githubusercontent.com/94532348/208289056-2e1eaf8b-ce10-405e-ba5e-bcfb0d744bab.png" width="300"/>
+<img src="https://user-images.githubusercontent.com/94532348/208289059-16eb5d1b-4ce1-4927-b2ef-7f29b6ccd592.png" width="300"/>
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/94532348/208289060-38270e67-d3af-454e-9ec5-452ba219d0be.png" width="300"/>
+<img src="https://user-images.githubusercontent.com/94532348/208289062-e3acc752-a1aa-46f6-94b4-53fa2e7a346d.png" width="300"/>
+<img src="https://user-images.githubusercontent.com/94532348/208289067-2392f051-2a1f-4c60-867f-b8380cc7c28f.png" width="300"/>
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/94532348/208289069-df46c12f-b398-4103-8dd4-768fd2e91f5d.png" width="300"/>
+<img src="https://user-images.githubusercontent.com/94532348/208289071-f5d6f67c-1059-4dab-bf58-b9ffd24196df.png" width="300"/>
+<img src="https://user-images.githubusercontent.com/94532348/208289075-faab58b8-7009-4187-968e-1e6fd30cecb8.png" width="300"/>
+</p>
+  
+<!--- ## Videos: -->
+<div align="center">
+  <video src="" height=1500>
+  </video>
+</div>
